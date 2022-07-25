@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+pypdf2 = "*"
+uvicorn = "*"
+requests = "*"
+
+[dev-packages]
+pytest = "*"
+black = "*"
+pylint = "*"
+pipenv = "*"
+pillow = "*"
+
+[requires]
+python_version = "3.9"

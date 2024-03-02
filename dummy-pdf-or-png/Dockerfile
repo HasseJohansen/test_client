@@ -1,4 +1,4 @@
-FROM golang:1.17-alpine AS build
+FROM golang:1.22-alpine AS build
 WORKDIR /build
 COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -ldflags '-extldflags "-static"' -o dummy-pdf-or-png
